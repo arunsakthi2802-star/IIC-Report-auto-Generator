@@ -1,0 +1,5 @@
+{
+  "name": "IIC Event Report Generator",
+  "description": "A web application for college department coordinators to fill out a form with event details, upload media, and automatically generate a formatted event report document.",
+  "requestFramePermissions": []
+}
