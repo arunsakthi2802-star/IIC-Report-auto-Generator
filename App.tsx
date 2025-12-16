@@ -191,10 +191,6 @@ const App: React.FC = () => {
     };
 
     const handlePreview = () => {
-        if (!isFormValid) {
-            alert('Please fill all required fields and upload required photos.');
-            return;
-        }
         setShowPreview(true);
     };
 
@@ -436,10 +432,9 @@ const App: React.FC = () => {
                     </div>
 
                     <div className="mt-10 text-center">
-                        <button onClick={handlePreview} disabled={!isFormValid} className="bg-blue-600 text-white font-bold py-3 px-8 rounded-lg text-lg hover:bg-blue-700 transition-colors disabled:bg-blue-300 disabled:cursor-not-allowed w-full md:w-auto mx-auto shadow-md">
+                        <button onClick={handlePreview} className="bg-blue-600 text-white font-bold py-3 px-8 rounded-lg text-lg hover:bg-blue-700 transition-colors w-full md:w-auto mx-auto shadow-md">
                             Preview Report
                         </button>
-                        {!isFormValid && <p className="text-sm text-red-500 mt-2">Please fill all required fields and upload at least one photo.</p>}
                     </div>
                 </div>
             </main>
